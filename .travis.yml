@@ -8,4 +8,4 @@ before_install:
 
 
 script:
-    - docker run izhonline/docker-react npm run test -- --coverage
+    - docker run -e CI=true izhonline/docker-react npm run test -- --coverage
